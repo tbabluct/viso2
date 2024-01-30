@@ -16,6 +16,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y ros-foxy-ros-base python3-argcomplete ros-dev-tools
 
 RUN apt-get install -y tmux git
+RUN apt-get install -y ros-noetic-image-proc ros-noetic-stereo-image-proc
 
 WORKDIR /bridge_ws/src/
 # https://github.com/ros2/ros1_bridge/issues/385
